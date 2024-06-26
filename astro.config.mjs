@@ -97,4 +97,12 @@ export default defineConfig({
     directRenderScript: true,
   },
   adapter: vercelStatic(),
+  // otras configuraciones
+  adapter: github({
+    // Usa "branch" para deploys en repositorios sin root
+    branch: 'gh-pages',
+    // Usa "repo" para deploys en repositorios dentro de una organización
+    repo: 'lsvr', // nombre del repositorio
+  }),
+  site: 'https://nayrojas.github.io/lsrv', // la URL de tu sitio
 });
