@@ -1,38 +1,35 @@
 // An array of links for navigation bar
 const navBarLinks = [
   { name: "Home", url: "/" },
-  { name: "Products", url: "/products" },
-  { name: "Services", url: "/services" },
-  { name: "Blog", url: "/blog" },
-  { name: "Contact", url: "/contact" },
+  { name: "Resultados", url: "/resultados" },
+  { name: "Estadisticas", url: "/estadisticas" },
+  { name: "Equipos", url: "/equipos" },
+  { name: "Contacto", url: "/contacto" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
-    section: "Ecosystem",
+    section: "La Liga",
     links: [
-      { name: "Documentation", url: "/welcome-to-docs/" },
-      { name: "Tools & Equipment", url: "/products" },
-      { name: "Construction Services", url: "/services" },
+      { name: "Resultados", url: "/welcome-to-docs/" },
+      { name: "Estadisticas", url: "/products" },
+      { name: "Partidos pasados", url: "/services" },
     ],
   },
   {
-    section: "Company",
+    section: "LSRV",
     links: [
-      { name: "About us", url: "#" },
-      { name: "Blog", url: "/blog" },
-      { name: "Careers", url: "#" },
-      { name: "Customers", url: "#" },
+      { name: "Nosotros", url: "#" },
+      { name: "Convenios", url: "/blog" },
+      { name: "Fundadores", url: "#" },
     ],
   },
 ];
 // An object of links for social icons
 const socialLinks = {
-  facebook: "https://www.facebook.com/",
-  x: "https://twitter.com/",
-  github: "https://github.com/mearashadowfax/ScrewFast",
-  google: "https://www.google.com/",
-  slack: "https://slack.com/",
+  facebook: "https://www.facebook.com/profile.php?id=61559654964803&locale=es_LA",
+  instagram: "https://www.facebook.com/profile.php?id=61559654964803&locale=es_LA",
+  tiktok: "https://slack.com/",
 };
 
 export default {

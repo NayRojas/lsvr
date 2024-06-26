@@ -1,37 +1,77 @@
 ---
-title: "The Impact of Sustainable Practices"
-description: "Discover how ScrewFast is leading the charge in promoting sustainability within the construction industry"
-cardImage: "@/images/insights/insight-3.avif"
+title: "Vikingos"
+description: "Fuerza y coraje en cada jugada"
+cardImage: "@/images/insights/3.svg"
 cardImageAlt: "Top view mechanical tools arrangement"
 ---
 
-The construction industry casts a long shadow.  While it provides the essential framework for our lives, its environmental impact is undeniable. From resource depletion and pollution to energy consumption and waste generation, traditional construction practices take a toll on our planet. But a revolution is brewing, and at the forefront is ScrewFast, a company demonstrably changing the game with its commitment to sustainable practices.
+Fundado en 2023 y con un enfoque en la excelencia deportiva y espíritu de equipo, participamos activamente en ligas amateur. Nuestro compromiso con el deporte y la disciplina se refleja en cada entrenamiento y juego. Más allá del campo, fomentamos valores de respeto, camaradería y desarrollo personal entre nuestros miembros.
 
-## The Scope of the Challenge
 
-Imagine this: the construction industry is responsible for a staggering 36% of global energy use and a whopping 40% of total CO2 emissions [1].  That's not all.  Buildings and construction are major contributors to solid waste generation, accounting for up to 40%, and gobble up 30% of the world's raw materials [1]. These statistics paint a clear picture: business as usual is simply unsustainable.
+## Roster
 
-## ScrewFast: Building with Responsibility
+<style>
+    .team-image {
+        height: 4rem;
+            max-width: 4rem;
+        margin: 5px;
+    }
 
-ScrewFast is a company built on the foundation of responsibility. They understand the environmental cost of construction and are taking decisive action to change course. Their commitment to sustainability permeates every aspect of their operations, from the materials they use to the construction processes they implement.
+      .table-cell {
+        padding: 0 2rem 0 1rem;
+        margin-top: 2rem; 
+            text-align: center;
+        /* Ajusta el valor según sea necesario */
+  }
+  .table-cell-dates {
+    text-align: center;
+  }
 
-* **Material Innovation:** ScrewFast prioritizes the use of recycled and recyclable materials. This not only reduces reliance on virgin resources but also lessens the environmental burden associated with resource extraction. 
-* **Energy Efficiency:**  ScrewFast champions energy-efficient construction methods.  This might involve incorporating high-performance insulation materials, optimizing building design for natural light and ventilation, or even integrating renewable energy sources like solar panels.  The result?  Buildings that require less energy to operate, leading to a significant reduction in greenhouse gas emissions.
-* **Waste Reduction:**  ScrewFast meticulously plans and executes projects to minimize waste generation.  This can involve using prefabricated components, employing modular construction techniques, and implementing meticulous waste segregation and recycling programs.  By minimizing waste, ScrewFast conserves resources and reduces the environmental impact associated with landfills.
-* **Sustainable Sourcing:**  ScrewFast takes a responsible approach to sourcing its materials.  They prioritize working with suppliers who share their commitment to sustainability.  This ensures that the environmental footprint is considered throughout the entire supply chain.
+@media (min-width: 576px) {
+     .team-image {
+        height: 70px;
+        max-width: 70px;
+    }
 
-## The Impact of Change
+          .table-cell {
+        padding: 0 2rem 0 1rem;
+        margin-top: 2rem; 
+            text-align: center;
+        /* Ajusta el valor según sea necesario */
+  }
+}
 
-ScrewFast's dedication to sustainable practices extends far beyond their company walls.  The ripple effect of their actions is substantial:
+@media (min-width: 768px) { 
+     .team-image {
+        height: 70px;
+        max-width: 70px;
+    }
 
-* **Environmental Benefits:**  By promoting resource conservation, reduced energy consumption, and minimized waste, ScrewFast contributes significantly to a healthier planet.  This translates to cleaner air, a more stable climate, and the preservation of natural resources for future generations. 
-* **Economic Advantages:**  Sustainable construction practices often lead to long-term economic benefits.  Energy-efficient buildings have lower operational costs, and sustainable materials can sometimes be surprisingly cost-competitive.  ScrewFast demonstrates that being green can also be good for the bottom line.
-* **Social Responsibility:**  ScrewFast recognizes that sustainability encompasses more than just the environment.  They are committed to creating safe and healthy work environments for their employees and fostering positive relationships with the communities in which they operate.
+          .table-cell {
+        padding: 0 2rem 0 1rem;
+        margin-top: 2rem; 
+            text-align: center;
+        /* Ajusta el valor según sea necesario */
+  }
+}
+</style>
 
-## Leading by Example
+|   | Nombre                | <span class="table-cell">Posición </span> | Número |
+|---|-----------------------|----------|--------|
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span>|
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
+| <img src="/src/images/insights/player.jpeg" alt="Lourdes Gurriel Jr." class="team-image"> | <span class="table-cell">Lourdes Gurriel Jr.</span> | <span class="table-cell">LF</span>       |  <span class="table-cell">10 </span> |
 
-ScrewFast isn't just talking the talk, they're walking the walk. Their commitment to sustainability is evident in every project they undertake.  By showcasing the tangible benefits of sustainable construction, ScrewFast is inspiring a paradigm shift within the industry.  They are paving the way for a future where buildings are not only functional but also environmentally responsible.
 
-## The Road Ahead
+## Equipo
 
-The construction industry is at a crossroads.  ScrewFast stands as a beacon, illuminating the path towards a more sustainable future.  By embracing innovative practices and prioritizing environmental responsibility, ScrewFast is not just building structures; they are building a better tomorrow.  As more companies follow suit, the impact will be profound. A greener construction industry signifies a healthier planet for all. 
+<img src="/src/images/insights/1t.jpg" alt="Image description" style="border-radius: 15px; margin-top: 20px;">
+

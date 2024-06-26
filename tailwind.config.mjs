@@ -14,7 +14,8 @@ export default {
       white: "#ffffff",
       gray: colors.gray,
       indigo: colors.indigo,
-      neutral: colors.neutral,  // Used mainly for text color
+      neutral: colors.neutral, 
+      blue: colors.blue, 
       yellow: {
         50: "#fefce8",
         100: "#fef9c3",
@@ -32,7 +33,16 @@ export default {
       red: colors.red, // Used for bookmark icon
       zinc: colors.zinc, // Used mainly for box-shadow
     },
-    extend: {},
+    extend: {
+      backgroundColor: {
+        'blueprimary': '#0D2577',
+        'bluemain': '#0D2577',
+      },
+      color: {
+          'blueppal': '#0D2577',
+          'bluemain': '#0D2577',
+      }
+    },
   },
   plugins: [
     require("tailwindcss/nesting"),

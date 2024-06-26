@@ -17,9 +17,9 @@ interface Props {
   href={`/insights/${insightEntry.slug}/`}
 >
   <!-- This is the container for the insight's cover image. -->
-  <div class="relative overflow-hidden rounded-xl pt-[50%] sm:pt-[70%]">
+  <div class="relative overflow-hidden rounded-xl pt-[60%] sm:pt-[60%]">
     <Image
-      class="absolute start-0 top-0 size-full rounded-xl object-cover transition duration-500 ease-in-out group-hover:scale-105"
+      class="absolute start-0 top-0 size-full rounded-xl object-cover transition duration-500 ease-in-out group-hover:scale-105 "
       src={insightEntry.data.cardImage}
       alt={insightEntry.data.cardImageAlt}
       draggable={"false"}
@@ -42,7 +42,7 @@ interface Props {
     <p
       class="mt-5 inline-flex items-center gap-x-1 font-medium text-orange-400 decoration-2 group-hover:underline dark:text-orange-300"
     >
-      Read more
+      Ver más
       <Icon name="arrowRightStatic" />
     </p>
   </div>

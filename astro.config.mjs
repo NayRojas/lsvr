@@ -8,16 +8,16 @@ import starlight from "@astrojs/starlight";
 // https://astro.build/config
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
-  site: "https://screwfast.uk",
+  site: "https://lsrv.pe",
   image: {
     domains: ["images.unsplash.com"],
   },
+  devToolbar: {
+    enabled: true
+  },
   i18n: {
-    defaultLocale: "en",
-    locales: ["en", "fr"],
-    fallback: {
-      fr: "en",
-    },
+    defaultLocale: "es",
+    locales: ["es"],
     routing: {
       prefixDefaultLocale: false,
     },
@@ -27,60 +27,40 @@ export default defineConfig({
     tailwind(),
     sitemap({
       i18n: {
-        defaultLocale: "en", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
+        defaultLocale: "es", // All urls that don't contain `fr` after `https://screwfast.uk/` will be treated as default locale, i.e. `en`
         locales: {
-          en: "en", // The `defaultLocale` value must present in `locales` keys
-          fr: "fr",
+          es: "es", // The `defaultLocale` value must present in `locales` keys
         },
       },
     }),
     starlight({
-      title: "ScrewFast Docs",
+      title: "Liga de Softbol RafaelVargas",
       defaultLocale: "root",
       locales: {
         root: {
-          label: "English",
-          lang: "en",
+          label: "Spanish",
+          lang: "es",
         },
-        de: { label: "Deutsch", lang: "de" },
-        es: { label: "Español", lang: "es" },
-        fa: { label: "Persian", lang: "fa", dir: "rtl" },
-        fr: { label: "Français", lang: "fr" },
-        ja: { label: "日本語", lang: "ja" },
+        de: { label: "English", lang: "en" },
         "zh-cn": { label: "简体中文", lang: "zh-CN" },
       },
       // https://starlight.astro.build/guides/sidebar/
       sidebar: [
         {
-          label: "Quick Start Guides",
-          translations: {
-            de: "Schnellstartanleitungen",
-            es: "Guías de Inicio Rápido",
-            fa: "راهنمای شروع سریع",
-            fr: "Guides de Démarrage Rapide",
-            ja: "クイックスタートガイド",
-            "zh-cn": "快速入门指南",
-          },
-          autogenerate: { directory: "guides" },
+          label: "Estadísticas",
+          autogenerate: { directory: "estadisticas" },
         },
         {
-          label: "Tools & Equipment",
-          items: [
-            { label: "Tool Guides", link: "tools/tool-guides/" },
-            { label: "Equipment Care", link: "tools/equipment-care/" },
-          ],
+          label: "Resultados",
+          autogenerate: { directory: "resultados" },
         },
         {
-          label: "Construction Services",
-          autogenerate: { directory: "construction" },
-        },
-        {
-          label: "Advanced Topics",
-          autogenerate: { directory: "advanced" },
+          label: "Partidos",
+          autogenerate: { directory: "partidos" },
         },
       ],
       social: {
-        github: "https://github.com/mearashadowfax/ScrewFast",
+        facebook: "https://www.facebook.com/profile.php?id=61559654964803",
       },
       disable404Route: true,
       customCss: ["./src/styles/starlight.css"],
@@ -94,13 +74,13 @@ export default defineConfig({
           tag: "meta",
           attrs: {
             property: "og:image",
-            content: "https://screwfast.uk" + "/social.webp",
+            content: "https://lsrv.pe" + "/social.webp",
           },
         },
         {
           tag: "meta",
           attrs: {
-            property: "twitter:image",
+            property: "facebook:image",
             content: "https://screwfast.uk" + "/social.webp",
           },
         },
