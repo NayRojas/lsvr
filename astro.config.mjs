@@ -102,7 +102,7 @@ export default defineConfig({
     // Usa "branch" para deploys en repositorios sin root
     branch: 'gh-pages',
     // Usa "repo" para deploys en repositorios dentro de una organización
-    repo: 'lsvr', // nombre del repositorio
+    repo: 'lsrv', // nombre del repositorio
   }),
   site: 'https://nayrojas.github.io/lsrv', // la URL de tu sitio
 });
