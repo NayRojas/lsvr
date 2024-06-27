@@ -41,7 +41,36 @@ export default {
       color: {
           'blueppal': '#0D2577',
           'bluemain': '#0D2577',
-      }
+      },
+      textColor: {
+        'blueppal': '#0D2577',
+        'bluemain': '#0D2577',
+      },
+      textShadow: {
+        'shadow-hero': '-1px 1px 11px white',
+      },
+      margin: {
+        'margin-hero': '4rem',
+      },
+      fillColor: {
+        'blueppal': '#0D2577',
+        'bluemain': '#0D2577',
+      },
+      backgroundImage: {
+        'hero-icon': "url('/src/images/hero-icon5.svg')",
+        'hero-icon-mobile': "url('/src/images/hero-icon7.svg')", // Reemplaza con la imagen que deseas para móviles
+      },
+      backgroundSize: {
+        'contain': 'contain',
+      },
+      backgroundRepeat: {
+        'no-repeat': 'no-repeat',
+      },
+      screens: {
+        'mobile': '640px',
+        // => @media (min-width: 640px) { ... }
+      },
+
     },
   },
   plugins: [

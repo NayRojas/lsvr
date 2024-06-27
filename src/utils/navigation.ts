@@ -2,26 +2,25 @@
 const navBarLinks = [
   { name: "Home", url: "/" },
   { name: "Resultados", url: "/resultados" },
-  { name: "Estadisticas", url: "/estadisticas" },
+  { name: "Estadísticas", url: "/estadisticas" },
   { name: "Equipos", url: "/equipos" },
   { name: "Contacto", url: "/contacto" },
 ];
 // An array of links for footer
 const footerLinks = [
   {
-    section: "La Liga",
+    section: "La Liga LSRV",
     links: [
-      { name: "Resultados", url: "/welcome-to-docs/" },
-      { name: "Estadisticas", url: "/products" },
-      { name: "Partidos pasados", url: "/services" },
+      { name: "Resultados", url: "/resultados" },
+      { name: "Estadísticas", url: "/estadisticas" },
+      { name: "Equipos", url: "/equipos" },
     ],
   },
   {
-    section: "LSRV",
+    section: "Contacto",
     links: [
-      { name: "Nosotros", url: "#" },
-      { name: "Convenios", url: "/blog" },
-      { name: "Fundadores", url: "#" },
+      { name: "Facebook", url: "https://www.facebook.com/profile.php?id=61559654964803" },
+      { name: "Youtube (proximamente)", url: "" },
     ],
   },
 ];

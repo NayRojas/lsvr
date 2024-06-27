@@ -19,7 +19,7 @@ const {
   rating,
   reviews,
   src,
-  alt
+  alt,
 } = Astro.props;
 
 // Define TypeScript interface for props
@@ -40,18 +40,11 @@ interface Props {
 }
 ---
 
-<!-- Defining a grid container that holds all the content -->
-<!-- <section
+<!-- Defining a grid container that holds all the content --><!-- <section
   class="mx-auto grid max-w-[85rem] gap-4 px-4 py-14 sm:px-6 md:grid-cols-2 md:items-center md:gap-8 lg:px-8 2xl:max-w-full"
-> -->
-  <!-- Title and description -->
-  <!-- <div> -->
-    <!-- Each h1 and p tag renders a portion of the title and subTitle defined above -->
-    <!-- <h1
+> --><!-- Title and description --><!-- <div> --><!-- Each h1 and p tag renders a portion of the title and subTitle defined above --><!-- <h1
       class="block text-balance text-3xl font-bold tracking-tight text-neutral-800 dark:text-neutral-200 sm:text-4xl lg:text-6xl lg:leading-tight"
-    > -->
-      <!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments -->
-      <!-- <Fragment set:html={title} />
+    > --><!-- About Fragment: https://docs.astro.build/en/basics/astro-syntax/#fragments --><!-- <Fragment set:html={title} />
     </h1>
     {subTitle &&
     <p
@@ -59,25 +52,18 @@ interface Props {
     >
       {subTitle}
     </p>
-  } -->
-    <!-- Action Button Section: This section includes two CTAs with their own styles and URL -->
-    <!-- <div class="mt-7 grid w-full gap-3 sm:inline-flex">
+  } --><!-- Action Button Section: This section includes two CTAs with their own styles and URL --><!-- <div class="mt-7 grid w-full gap-3 sm:inline-flex">
       {primaryBtn && 
       <PrimaryCTA title={primaryBtn} url={primaryBtnURL} />
       }
       {secondaryBtn && 
       <SecondaryCTA title={secondaryBtn} url={secondaryBtnURL} />
       }
-    </div> -->
-
-    <!-- Review Section: This section presents avatars, review ratings and the number of reviews -->
-    <!-- { withReview ? (
+    </div> --><!-- Review Section: This section presents avatars, review ratings and the number of reviews --><!-- { withReview ? (
     <ReviewComponent avatars={avatars} starCount={starCount} rating={rating} reviews={reviews} />
     ) : "" }
 
-  </div> -->
-  <!-- Hero Image Section -->
-  <!-- <div class="flex w-full">
+  </div> --><!-- Hero Image Section --><!-- <div class="flex w-full">
       <div class="top-12 overflow-hidden">
 	{src && alt &&
 	<Image
@@ -93,28 +79,65 @@ interface Props {
   </div>
 </section> -->
 <section>
-  <div class="relative isolate px-5 pt-2 lg:px-8 bg-gradient-to-tl	" style="background-image: url('/src/images/hero-icon4.png'); background-size: cover; background-position: center;">
-    <div class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80" aria-hidden="true">
-      <div class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+  <div
+    class="relative isolate px-5 pt-2 max-[768px]:bg-hero-icon-mobile  max-[768px]:bg-contain max-[768px]:bg-no-repeat  sm:bg-hero-icon-mobile sm:bg-contain sm:bg-no-repeat md:bg-hero-icon-mobile md:bg-contain md:bg-no-repeat  lg:bg-hero-icon lg:bg-cover lg:bg-center lg:px-8"
+  >
+    <div
+      class="absolute inset-x-0 -top-40 -z-10 transform-gpu overflow-hidden blur-3xl sm:-top-80"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 rotate-[30deg] bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
+      </div>
     </div>
     <div class="mx-auto max-w-2xl py-32 sm:py-48 lg:py-56">
       <div class="hidden sm:mb-8 sm:flex sm:justify-center">
-        <div class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 dark:text-neutral-400 ring-1 ring-gray-900/10 hover:ring-gray-900/20 hover:bg-yellow-500 hover:text-black" >
-          Ve nuestros partidos en vivo <a href="https://www.facebook.com/profile.php?id=61559654964803" target="blank" class="font-semibold text-blueppal dark:text-white hover:text-blueppal"><span class="absolute inset-0 t" aria-hidden="true"></span>LSRV<span aria-hidden="true">&rarr;</span></a>
+        <div
+          class="relative rounded-full px-3 py-1 text-sm leading-6 text-gray-600 ring-1 ring-gray-900/10 hover:bg-yellow-500 hover:text-black hover:ring-gray-900/20 dark:text-neutral-400"
+        >
+          Ve nuestros partidos en vivo <a
+            href="https://www.facebook.com/profile.php?id=61559654964803"
+            target="blank"
+            class="font-semibold text-blueppal hover:text-blueppal dark:text-white"
+            ><span class="t absolute inset-0" aria-hidden="true"
+            ></span>LSRV<span aria-hidden="true">&rarr;</span></a
+          >
         </div>
       </div>
-      <div class="text-center">
-        <h1 class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl">{title}</h1>
-        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-neutral-300">{subTitle}</p>
-        <div class="mt-10 flex items-center justify-center gap-x-6">
-          <a href={primaryBtnURL} class="rounded-md bg-bluemain text-white px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-white hover:text-blueppal focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600" >{primaryBtn}</a>
-          <a href={secondaryBtnURL} class="text-sm font-semibold leading-6 text-neutral-500 hover:text-white">{secondaryBtn}</a>
+      <div class="text-center sm:text-margin">
+        <h1
+          class="text-4xl font-bold tracking-tight text-gray-900 dark:text-white sm:text-7xl drop-shadow-[0_35px_35px_rgba(0,0,0,0.25)]"
+        >
+          {title}
+        </h1>
+        <p class="mt-6 text-lg leading-8 text-gray-600 dark:text-neutral-300">
+          {subTitle}
+        </p>
+        <div class="mt-10 flex flex-col items-center justify-center gap-x-6">
+          <a
+            href={primaryBtnURL}
+            class="rounded-md bg-bluemain px-3.5 py-2.5 text-sm font-semibold text-white shadow-sm hover:bg-yellow-500 hover:text-black focus-visible:outline focus-visible:outline-2 focus-visible:outline-offset-2 focus-visible:outline-indigo-600"
+            >{primaryBtn}</a
+          >
+          <a
+            href={secondaryBtnURL}
+            class="mt-2 text-sm font-semibold leading-6 text-neutral-500 hover:text-bluemain"
+            >{secondaryBtn}</a
+          >
         </div>
       </div>
     </div>
-    <div class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]" aria-hidden="true">
-      <div class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]" style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"></div>
+    <div
+      class="absolute inset-x-0 top-[calc(100%-13rem)] -z-10 transform-gpu overflow-hidden blur-3xl sm:top-[calc(100%-30rem)]"
+      aria-hidden="true"
+    >
+      <div
+        class="relative left-[calc(50%+3rem)] aspect-[1155/678] w-[36.125rem] -translate-x-1/2 bg-gradient-to-tr from-[#ff80b5] to-[#9089fc] opacity-30 sm:left-[calc(50%+36rem)] sm:w-[72.1875rem]"
+        style="clip-path: polygon(74.1% 44.1%, 100% 61.6%, 97.5% 26.9%, 85.5% 0.1%, 80.7% 2%, 72.5% 32.5%, 60.2% 62.4%, 52.4% 68.1%, 47.5% 58.3%, 45.2% 34.5%, 27.5% 76.7%, 0.1% 64.9%, 17.9% 100%, 27.6% 76.8%, 76.1% 97.7%, 74.1% 44.1%)"
+      >
+      </div>
     </div>
   </div>
-</div>
 </section>
