@@ -103,9 +103,5 @@ export default defineConfig({
     directRenderScript: true
   },
   adapter: vercel(),
-  vite: {
-    define: {
-      'process.env': process.env
-    }
-  }
+  
 });
