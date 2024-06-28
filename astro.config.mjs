@@ -4,8 +4,11 @@ import vercelStatic from "@astrojs/vercel/static";
 import sitemap from "@astrojs/sitemap";
 import compressor from "astro-compressor";
 import starlight from "@astrojs/starlight";
+import dotenv from 'dotenv';
 
 import vercel from "@astrojs/vercel/serverless";
+
+dotenv.config();
 
 // https://astro.build/config
 export default defineConfig({
@@ -99,5 +102,10 @@ export default defineConfig({
     clientPrerender: true,
     directRenderScript: true
   },
-  adapter: vercel()
+  adapter: vercel(),
+  vite: {
+    define: {
+      'process.env': process.env
+    }
+  }
 });
