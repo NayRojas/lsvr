@@ -81,20 +81,20 @@ export default defineConfig({
       tag: "meta",
       attrs: {
         property: "og:image",
-        content: "https://lsrv.pe" + "/social.webp"
+        content: "https://lsvr.vercel.app/" + "/social.webp"
       }
     }, {
       tag: "meta",
       attrs: {
         property: "facebook:image",
-        content: "https://screwfast.uk" + "/social.webp"
+        content: "https://lsvr.vercel.app/" + "/social.webp"
       }
     }]
   }), compressor({
     gzip: false,
     brotli: true
   })],
-  output: "static",
+  output: "server",
   experimental: {
     clientPrerender: true,
     directRenderScript: true
