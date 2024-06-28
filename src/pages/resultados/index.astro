@@ -21,9 +21,9 @@ const product: CollectionEntry<"products">[] = (
 );
 
 // Define variables for page content
-const title: string = "Products";
+const title: string = "Resultados";
 const subTitle: string =
-  "Explore the durability and precision of ScrewFast tools, designed for both professionals and enthusiasts. Each of our products is crafted with precision and built to last, ensuring you have the right tool for every job.";
+  "Consulta los detalles a continuación para ver cómo ha rendido tu equipo favorito y mantente actualizado con los puntajes y estadísticas más recientes.";
 
 // Testimonial data that will be rendered in the component
 const testimonials = [
@@ -98,25 +98,70 @@ const pageTitle: string = `Products | ${SITE.title}`;
           )
         }
       </div>
-      <PrimaryCTA title="Customer Stories" url="#testimonials" noArrow={true} />
+      <PrimaryCTA title="Ver Estadísticas" url="/estadisticas" noArrow={true} />
     </div>
     <!--Displaying products in alternating styles. Alternative product gets different card styling.-->
     <!--Maps through all product entries and displays them with either CardSmall or CardWide based on their position.-->
-    <section class="grid grid-cols-1 gap-4 sm:grid-cols-3 md:gap-6 xl:gap-8">
-      {
-        product.map((product, index) => {
-          const position = index % 4;
-          if (position === 0 || position === 3) {
-            return <CardSmall product={product} />;
-          } else {
-            return <CardWide product={product} />;
-          }
-        })
-      }
-    </section>
+    <div class="">
+      <table
+        class="w-full text-left text-sm text-gray-500 dark:text-gray-400 rtl:text-right"
+      >
+        <thead
+          class="bg-gray-50 text-xs uppercase text-gray-700 dark:bg-gray-700 dark:text-gray-400"
+        >
+          <tr>
+            <th scope="col" class="px-6 py-3"> Equipos </th>
+            <th scope="col" class="px-6 py-3"> PP/PG </th>
+            <th scope="col" class="px-6 py-3"> Resultados </th>
+          </tr>
+        </thead>
+        <tbody>
+ <tr
+    class="border-b bg-white flex-col hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600"
+  >
+    <th
+      scope="row"
+      class="flex items-center whitespace-nowrap px-6 py-4 text-gray-900 dark:text-white"
+    >
+      <img
+        class="h-10 w-10 rounded-full"
+        src="/src/images/insights/8.png"
+        alt="Los Chamos"
+      />
+      <div class="ps-3">
+        <div class="text-base font-semibold">Los Chamos</div>
+      </div>
+    </th>
+    <td class="px-6 py-4">PG Ramiro Lopez</td>
+    <td class="px-6 py-4">7</td>
+  </tr>
+  <tr
+    class="border-b bg-white hover:bg-gray-50 dark:border-gray-700 dark:bg-gray-800 dark:hover:bg-gray-600"
+  >
+    <th
+      scope="row"
+      class="flex items-center whitespace-nowrap px-6 py-4 text-gray-900 dark:text-white"
+    >
+      <img
+        class="h-10 w-10 rounded-full"
+        src="/src/images/insights/9.png"
+        alt="Rangers"
+      />
+      <div class="ps-3">
+        <div class="text-base font-semibold">Rangers</div>
+      </div>
+    </th>
+    
+    <td class="px-6 py-4">PG Ramiro Lopez</td>
+    <td class="px-6 py-4">7</td>
+   
+  </tr>
+        </tbody>
+      </table>
+    </div>
   </div>
   <!--Features statistics section-->
-  <FeaturesStatsAlt
+  <!-- <FeaturesStatsAlt
     title="Why Choose ScrewFast?"
     subTitle="Transform your ideas into tangible results with ScrewFast tools. Whether you're starting with a sketch on a napkin or diving into a comprehensive construction project, our tools are engineered to help you build with confidence."
     benefits={[
@@ -124,10 +169,10 @@ const pageTitle: string = `Products | ${SITE.title}`;
       "Innovative solutions tailored to modern construction needs.",
       "Customer support dedicated to your project's success.",
     ]}
-  />
+  /> -->
   <!--Testimonials section-->
-  <TestimonialsSectionAlt
+  <!-- <TestimonialsSectionAlt
     title="What Our Customers Say"
     testimonials={testimonials}
-  />
+  /> -->
 </MainLayout>
