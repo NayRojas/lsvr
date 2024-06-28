@@ -70,6 +70,9 @@ export default {
         'mobile': '640px',
         // => @media (min-width: 640px) { ... }
       },
+      border: {
+        '4': '4px',
+      },
 
     },
   },
