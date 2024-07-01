@@ -20,7 +20,7 @@
     "astro-compressor": "^0.4.1",
     "cookie": "^0.4.1",
     "dotenv": "^16.4.5",
-    "globby": "^14.0.1",
+    "globby": "^14.0.2",
     "gsap": "^3.12.5",
     "html-minifier-terser": "^7.2.0",
     "preline": "^2.3.0",
