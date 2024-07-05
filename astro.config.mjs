@@ -14,6 +14,7 @@ dotenv.config();
 export default defineConfig({
   // https://docs.astro.build/en/guides/images/#authorizing-remote-images
   site: "https://lsrv.pe",
+  outDir: 'dist',
   image: {
     domains: ["images.unsplash.com"]
   },
